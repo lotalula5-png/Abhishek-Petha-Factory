@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Petha Factory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="Petha Factory Logo" />
+        <span>Abhishek Petha Factory</span>
+      </a>
+
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav id="site-nav" class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Fresh, traditional <span class="accent">Petha</span> every day</h1>
+          <p>Handmade sweets from the heart of Bhandarkota — classic recipes, premium ingredients.</p>
+          <a href="#products" class="btn">Our Products</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-petha.jpg" alt="Petha sweets" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <div class="about-inner">
+        <div class="about-text">
+          <h2>About Abhishek Petha Factory</h2>
+          <p>At Abhishek Petha Factory we follow traditional methods to make soft, juicy pethas with natural flavors and no preservatives. Family-run since 1992.</p>
+          <ul>
+            <li>Traditional recipes</li>
+            <li>Quality ingredients</li>
+            <li>Packaged fresh daily</li>
+          </ul>
+        </div>
+        <div class="about-photo">
+          <img src="assets/about.jpg" alt="Making petha" />
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="container products">
+      <h2>Our Products</h2>
+      <div class="grid">
+        <!-- Product card -->
+        <article class="card">
+          <img src="assets/petha-classic.jpg" alt="Classic Petha">
+          <div class="card-body">
+            <h3>Classic Petha</h3>
+            <p>Soft, syrupy classic petha made the old-fashioned way.</p>
+            <div class="price">₹120 / 250g</div>
+            <button class="btn add-cart" data-name="Classic Petha" data-price="120">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/petha-kesar.jpg" alt="Kesar Petha">
+          <div class="card-body">
+            <h3>Kesar Petha</h3>
+            <p>Delicately flavored with saffron.</p>
+            <div class="price">₹180 / 250g</div>
+            <button class="btn add-cart" data-name="Kesar Petha" data-price="180">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/petha-mix.jpg" alt="Assorted Petha">
+          <div class="card-body">
+            <h3>Assorted Petha</h3>
+            <p>Assortment of seasonal flavors.</p>
+            <div class="price">₹220 / 500g</div>
+            <button class="btn add-cart" data-name="Assorted Petha" data-price="220">Add to cart</button>
+          </div>
+        </article>
+
+        <!-- Add more products as needed -->
+      </div>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="assets/gallery1.jpg" alt="">
+        <img src="assets/gallery2.jpg" alt="">
+        <img src="assets/gallery3.jpg" alt="">
+        <img src="assets/gallery4.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Abhishek Petha Factory</h3>
+          <p>Address: VILL JOT PAHAR POST CHIRAIYAKOT , [MAU], India</p>
+          <p>Phone: +91-9565855654</p>
+          <p>Opening: 8:00 AM – 9:00 PM</p>
+
+          <div class="map">
+            <!-- Replace with real embedded map iframe if you have a location -->
+            <iframe title="map" src="about:blank" style="width:100%;height:200px;border:0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Petha Factory — All rights reserved</p>
+      <div class="social">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Instagram">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
